@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "server.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/server.js" }
+  ],
+  "env": {
+    "MONGO_URI": "mongodb+srv://lakshmisrianand06_db_user:L.a.k.s.h.m.i.s.r.i@cluster0.lqgzwpw.mongodb.net/?appName=Cluster0your_mongodb_connection_string"
+  }
+}
